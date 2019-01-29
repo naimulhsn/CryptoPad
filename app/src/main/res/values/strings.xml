@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CryptoPad</string>
+    <string name="title_activity_notes">Notes</string>
+</resources>

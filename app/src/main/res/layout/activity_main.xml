@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.CardView
+        android:visibility="gone"
+            android:id="@+id/id_app_card_enter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+            android:layout_margin="20dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/id_app_password_wrongtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Wrong Password !"
+                android:textColor="#d20c0c"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Enter The app password"
+                android:textSize="20sp"
+                android:textColor="#999"/>
+            <EditText
+                android:id="@+id/id_app_password"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_margin="20dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/button_bg"
+                android:drawableLeft="@drawable/ic_password"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:singleLine="true"/>
+            <Button
+                android:id="@+id/id_app_password_enter_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#666"
+                android:textAllCaps="false"
+                android:text="Enter"
+                android:textColor="#fff"
+                android:onClick="enter"
+                />
+        </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_app_card_set_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorPrimary"
+        android:layout_margin="20dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="Set an App password to protect your notes from others.\nYou will have to use this password each time when accessing in this App"
+                android:textSize="15sp"
+                android:textColor="#999"/>
+
+            <TextView
+                android:id="@+id/id_app_set_password_dont_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Passwords Doesn't Match!!!"
+                android:textColor="#b10909"
+                android:visibility="gone"/>
+
+
+                <EditText
+                    android:id="@+id/id_app_set_password"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="5dp"
+                    android:paddingStart="5dp"
+                    android:background="@drawable/button_bg"
+                    android:hint="Enter Password"
+                    android:textColorHint="#666"
+                    android:textSize="14dp"
+                    android:inputType="textPassword"
+                    />
+
+            <EditText
+                android:id="@+id/id_app_set_password_confirm"
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:paddingStart="5dp"
+                android:background="@drawable/button_bg"
+                android:hint="Confirm Password"
+                android:textColorHint="#666"
+                android:textSize="14dp"
+                android:inputType="textPassword"
+                />
+
+
+
+            <Button
+                android:id="@+id/id_app_set_password_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="#666"
+                android:textAllCaps="false"
+                android:text="Set Password"
+                android:textColor="#ccc"
+
+                android:onClick="pass_set"
+                />
+        </LinearLayout>
+
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

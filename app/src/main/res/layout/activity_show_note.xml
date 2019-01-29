@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".NewNote">
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_show_note_card_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorBg"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <android.support.design.widget.TextInputLayout
+                android:textColorHint="@color/colorGray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/edittext_bg"
+                android:layout_gravity="center_horizontal">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/id_show_note_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="2dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:background="@color/colorBg"
+                    android:hint="Enter Password"
+                    android:textColor="@color/colorWhitish"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:maxLines="2"
+                    android:maxLength="35"/>
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/id_show_note_open_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/colorWhitish"
+                android:text="Open  Note"
+                android:textColor="@color/colorBlack"
+                android:onClick="matchPass"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_show_note_card_note"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:cardBackgroundColor="@color/colorBg"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/id_show_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingBottom="12dp"
+                android:paddingRight="5dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:gravity="center"
+                android:text="The Title is Here"
+                android:textSize="16sp"
+                android:textColor="@color/colorWhitish"
+                android:background="@drawable/edittext_bg"
+                android:layout_gravity="center_horizontal"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/edittext_bg">
+                <TextView
+                    android:id="@+id/id_show_note_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="40dp"
+                    android:paddingRight="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:text="a;ldskgjasildjfaskldjgaiofjklasdj;igajgikjsdgilajsgdkljalgdj"
+                    android:textColor="@color/colorWhitish"
+                    android:textSize="14sp"/>
+
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/id_show_note_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="bottom|right"
+                android:text="1-54-57"
+                android:textColor="@color/colorWhitish"
+                android:textSize="16sp"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
